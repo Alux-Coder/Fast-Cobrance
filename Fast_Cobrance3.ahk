@@ -7,7 +7,7 @@ Quit_gui(Event, Info){
 }
 
 Final_msg(Cred){
-	msg := "{Shift down}{Enter}{Shift up}{Text}Entramos em contato sobre um assunto de *Extrema Urgencia* referente a " Cred
+	msg := "{Shift down}{Enter}{Shift up}{Text}Entramos em contato sobre um assunto de *Extrema Urgência* referente a " Cred
 	Send(msg)
 	Send("{Shift down}{Enter}{Shift up}{Text}Precisamos da sua resposta o quanto antes.")
 	Send("{Enter}")
@@ -18,9 +18,9 @@ Credores := [
 	"Solar Coca-Cola",
 	"Spal Coca-Cola",
 	"Uberlandia Coca-Cola",
-	"Cervejaria Petropolis",
+	"Cervejaria Petrópolis",
 	"Volpato Serviço",
-	"Flaming",
+	"Fleming",
 	"MediPOA",
 	"Aurora Alimentos"
 	]
@@ -45,7 +45,7 @@ Ok_Button.OnEvent("Click", Quit_gui)
 {
 	razao_s := InputBox("Me diga a Razão social", "Razao Social").value
 	Winactivate("ahk_exe chrome.exe")
-	Send("^aBom dia {Text}Falo com o Responsavel da razão social: ")
+	Send("^aBom dia {Text}Falo com o Responsável da razão social: ")
 	Send(razao_s "{?}")
 	Choice_Cred.show('w240 h180')
 	WinWaitNotActive('Escolha Credor')
@@ -67,7 +67,7 @@ Ok_Button.OnEvent("Click", Quit_gui)
 {
 	razao_s := InputBox("Me diga a Razão social", "Razao Social").value
 	Winactivate("ahk_exe chrome.exe")
-	Send("^aBoa tarde {Text}Falo com o Responsavel da razão social: ")
+	Send("^aBoa tarde {Text}Falo com o Responsável da razão social: ")
 	Send(razao_s "{?}")
 	Choice_Cred.show('w240 h180')
 	WinWaitNotActive('Escolha Credor')
@@ -78,7 +78,7 @@ Ok_Button.OnEvent("Click", Quit_gui)
 {
 	Choice_Cred.show('w240 h180')
 	WinWaitNotActive('Escolha Credor')
-	Send("^a{Text}Boa tarde! Segue lembrança de pagamento do boleto que vence hoje, atrelado a " Credores[Escolha.value] ". ")
+	Send("^a{Text}Bom dia/Boa tarde! Segue lembrança de pagamento do boleto que vence hoje, atrelado a " Credores[Escolha.value] ". ")
 	Send("{Shift down}{Enter}{Shift up}{Text}Lembrando que o boleto é com data única, portanto o pagamento precisa ser assertivo na data de hoje.")
 	Send("{Shift down}{Enter}{Shift up}{Text}Como lhe informei, a senha para abrir o boleto são os *6 últimos dígitos do seu CNPJ/CPF*.")
 	Send("{Shift down}{Enter}{Shift up}{Text}Aguardamos o envio do comprovante para agilizarmos a baixa.")
@@ -102,10 +102,12 @@ Ok_Button.OnEvent("Click", Quit_gui)
 {
 	Choice_Cred.show('w240 h180')
 	WinWaitNotActive('Escolha Credor')
-	Send("^a{Text}Boa tarde, vim pedir o comprovante de pagamento referente ao boleto que formalizamos para pagamento hoje. *Ressalto que o boleto tem data única para pagamento HOJE*")
+	Send("^a{Text}Bom dia/Boa tarde, vim pedir o comprovante de pagamento referente ao boleto que formalizamos para pagamento hoje. *Ressalto que o boleto tem data única para pagamento HOJE*")
 	Send("{Shift down}{Enter}{Shift up}{Text}Informo que o *Credor(" Credores[Escolha.value] ")* está ciente e está na espera do pagamento.")
 	Send("{Shift down}{Enter}{Shift up}{Text}Informo que o nosso boleto é valido até as 22h para pagamento em qualquer app bancário.")
 	Send("{Shift down}{Enter}{Shift up}{Text}Porem solicito que realize o pagamento antes das 22h, para que não ocorra nenhum problema na hora do pagamento.")
+	Send("{Shift down}{Enter}{Shift up}{Text}Bons negócios!")
+	Send("{Enter}")
 }
 
 ::quebr1::
@@ -115,7 +117,8 @@ Ok_Button.OnEvent("Click", Quit_gui)
 	Send("^a{Text}Olá, não identificamos o pagamento do acordo que formalizamos para pagamento ontem referente aos débitos da " Credores[Escolha.value] ", o que ocorreu?")
 	Send("{Shift down}{Enter}{Shift up}{Text}Entramos em contato porque *precisamos formalizar um novo acordo* e emitir um novo boleto, pois o que a senhor(a) tem em mãos não é mais valido para pagamento.")
 	Send("{Shift down}{Enter}{Shift up}{Text}O quanto antes estarmos definindo, melhor para que as correções de juros sejam menores.")
-	Send("{Shift down}{Enter}{Shift up}{Text}Caso contario, o valor só irá aumentar.")
+	Send("{Enter}")
+	Send("{Shift down}{Enter}{Shift up}{Text}Caso contrário, *o valor só irá aumentar.*")
 	Send("{Enter}")
 }
 
