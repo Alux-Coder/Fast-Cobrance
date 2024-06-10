@@ -1,7 +1,17 @@
-<Cred>
+<config>
+cobrador = Alex
+</config>
 
-</Cred>
 
-<Paths>
-
-</Paths>
+<cred>
+"Andina Coca-Cola",
+"Solar Coca-Cola",
+"Spal Coca-Cola",
+"Uberlândia Coca-Cola",
+"Cervejaria Petrópolis",
+"Volpato Serviço",
+"Fleming",
+"MediPOA",
+"Aurora Alimentos",
+"Cémiterio Parque Jardim da Paz"
+</cred>
