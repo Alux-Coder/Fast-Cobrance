@@ -11,4 +11,4 @@ E executar o Fast_Cobrance.exe, direto da pasta do projeto. Ele precisa estar na
 ## Funções do Fast-Cobrance
 
 Segue acesso ao manual do fast-cobrance.
-[Manual Fast-Cobrance 3.8](https://github.com/Alux-Coder/Fast-Cobrance/blob/main/Manual%20Fast%20Cobrance%203.8.pdf)
+[Manual Fast-Cobrance 3.8](https://github.com/Alux-Coder/Fast-Cobrance/blob/main/Manual%20Fast%20Cobrance%203.9.pdf)
