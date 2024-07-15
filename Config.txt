@@ -1,0 +1,20 @@
+#Config_Basic
+
+<config>
+cobrador = Alex
+scripts_dir = Scripts
+</config>
+
+
+<cred>
+Andina Coca-Cola
+Solar Coca-Cola
+Spal Coca-Cola
+Uberlândia Coca-Cola
+Cervejaria Petrópolis
+Volpato Serviços
+Fleming
+MediPOA
+Aurora Alimentos
+Cémiterio Parque Jardim da Paz
+</cred>
